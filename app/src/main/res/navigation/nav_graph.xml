@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.mcrnrealestate.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_realEstateListFragment"
+            app:destination="@id/realEstateListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/realEstateListFragment"
+        android:name="com.example.mcrnrealestate.RealEstateListFragment"
+        android:label="fragment_real_estate_list"
+        tools:layout="@layout/fragment_real_estate_list" >
+        <action
+            android:id="@+id/action_realEstateListFragment_to_realEstateDetailFragment"
+            app:destination="@id/realEstateDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/realEstateDetailFragment"
+        android:name="com.example.mcrnrealestate.RealEstateDetailFragment"
+        android:label="fragment_real_estate_detail"
+        tools:layout="@layout/fragment_real_estate_detail" />
+</navigation>

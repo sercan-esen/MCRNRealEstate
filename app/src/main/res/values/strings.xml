@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MARS ESTATE</string>
+    <string name="let_s_explo">Lets Explore the Solar System with Explorer
+</string>
+    <string name="real_estate_type">For %1$s</string>
+    <string name="real_estate_price">%1$s$</string>
+    <string name="buy_now_detail_text">BUY NOW, BE A MARTIAN</string>
+    <string name="buy_now_text">Buy Now</string>
+    <string name="already_have_an_account"><b>Let’s Explore the</b> <big><b><font color='#F9AD1A'>Solar System</font></b></big><b>\nwith </b><big><b><font color='#F9AD1A'>Explorer</font></b></big></string>
+
+
+</resources>

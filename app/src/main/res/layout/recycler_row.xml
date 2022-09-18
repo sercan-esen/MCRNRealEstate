@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_item_bg"
+    android:padding="2dp"
+    android:layout_margin="2dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="160dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_height="204dp"
+        android:paddingVertical="8dp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivRealEstate"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvRealEstatePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/ivRealEstate"
+        app:layout_constraintTop_toBottomOf="@id/ivRealEstate"
+        android:fontFamily="@font/roboto_regular"
+        tools:text="65.000$"/>
+
+
+    <ImageView
+        android:id="@+id/ivPlot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="@id/ivRealEstate"
+        app:layout_constraintTop_toBottomOf="@id/ivRealEstate"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/plot_1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvId"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_thin"
+        android:textSize="13sp"
+        tools:text="498547"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toStartOf="@id/ivPlot"
+        app:layout_constraintTop_toTopOf="@id/tvRealEstatePrice"
+        app:layout_constraintStart_toEndOf="@id/tvRealEstatePrice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPropertyType"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora_regular"
+        android:layout_marginStart="10dp"
+        tools:text="For Rent"
+        app:layout_constraintTop_toTopOf="@id/ivRealEstate"
+        app:layout_constraintStart_toStartOf="@id/ivRealEstate"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
